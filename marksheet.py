@@ -25,8 +25,8 @@ sub3 = int(input("Islamiat: "))
 sub4 = int(input("Computer: "))
 sub5 = int(input("Physics: "))
 sub6 = int(input("Mathematics: "))
-
-#Calculations
+'''
+#MisCalculations
 total_marks_obtained = (sub1+sub2+sub3+sub4+sub5+sub6)
 percentage = float((total_marks_obtained/500)*100)
 if percentage <= 100.0:
@@ -41,7 +41,23 @@ elif percentage < 50.0:
     grade = 'D'
 elif percentage < 33.0:
     grade = 'F'
-
+'''
+#Calculations
+total_marks_obtained = (sub1+sub2+sub3+sub4+sub5+sub6)
+percentage = float((total_marks_obtained/500)*100)
+if percentage > 79.0 and percentage < 101.0:
+    grade = 'A+'
+elif percentage > 69.0 and percentage < 80.0:
+    grade = 'A'
+elif percentage > 59.0 and percentage < 70.0:
+    grade = 'B'
+elif percentage > 49.0 and percentage < 60.0:
+    grade = 'C'
+elif percentage > 33.0 and percentage < 50.0:
+    grade = 'D'
+elif percentage < 34.0:
+    grade = 'F'
+    
 t = total_marks_obtained
 #Marksheet Generating
 print('''
