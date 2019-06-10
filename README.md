@@ -1,2 +1,0 @@
-# piaic
-PIAIC Assignments
