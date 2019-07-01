@@ -26,8 +26,6 @@ def edit_student(std_ID):
             students[x]['Contact'] = input("Contact:\t")
             print("\n\nStudent Has Been Edited Successfully.")
             break
-        else:
-            print("Student Does Not Exists.")
             
 #def delt_student() WORKING
 def delt_student(std_ID):
@@ -67,7 +65,7 @@ while True:
     if opt == 1:
         add_student()
     elif opt == 2:
-        std_ID = int(input("Enter ID"))
+        std_ID = int(input("Enter ID:\t"))
         edit_student(std_ID)
     elif opt == 3:
         std_ID = int(input("Enter ID:\t"))
